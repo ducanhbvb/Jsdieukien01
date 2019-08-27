@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập diem kiem tra bthuong: <input id="numBer1" style="text"><br/>
+Nhập diem kiem tra giua ky: <input id="numBer2" style="text"><br/>
+Nhập diem kiem tra cuoi ky: <input id="numBer3" style="text"><br/>
+<button style="button" onclick="tinh()">Cick Me!</button>
+<script>
+    function tinh() {
+        let numBer1 = parseInt(document.getElementById("numBer1").value);
+        let numBer2 = parseInt(document.getElementById("numBer2").value);
+        let numBer3 = parseInt(document.getElementById("numBer3").value);
+        let diemTB = (numBer1 + numBer2 + numBer3) / 3;
+        if (diemTB >= 75) {
+            document.write("em thuoc hoc sinh loai A voi so diem TB=" + diemTB);
+        } else if (diemTB >= 60) {
+            document.write("em thuoc hoc sinh loai B voi so diem TB=" + diemTB);
+        } else if (diemTB >= 45) {
+            document.write("em thuoc hoc sinh loai C voi so diem TB=" + diemTB);
+        } else if (diemTB >= 35) {
+            document.write("em thuoc hoc sinh loai D voi so diem TB=" + diemTB);
+        } else {
+            document.write("em thuoc hoc sinh loai E voi so diem TB=" + diemTB);
+        }
+    }
+</script>
+</body>
+</html>

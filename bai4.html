@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập số thứ 1: <input id="numBer1" style="text"><br/>
+Nhập số thứ 2: <input id="numBer2" style="text"><br/>
+Nhập số thứ 3: <input id="numBer3" style="text"><br/>
+<button style="button" onclick="tinh()">Cick Me!</button>
+<script>
+    function tinh() {
+        let numBer1 = parseInt(document.getElementById("numBer1").value);
+        let numBer2 = parseInt(document.getElementById("numBer2").value);
+        let numBer3 = parseInt(document.getElementById("numBer3").value);
+        if (numBer1 > numBer2) {
+            if(numBer1>numBer3){document.write("gia tri lon nhat la so thu 1= "+numBer1);}
+            else {document.write("gia tri lon nhat la so thu 3= "+numBer3);}
+        } else if(numBer2>numBer3) {
+            document.write("gia tri lon nhat la so thu 2= "+numBer2);
+        }else {document.write("gia tri lon nhat la so thu 3= "+numBer3);}
+    }
+</script>
+</body>
+</html>

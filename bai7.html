@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let phut=parseInt(prompt("nhap so phut da xai"));
+    if(phut<50){
+        let thanhToan=25000+phut*600;
+       alert("tien phai tra ="+thanhToan);
+    }else if(phut<150){
+        let thanhToan=25000+50*600+(phut-50)*400;
+        alert("tien phai tra ="+thanhToan);
+    }else {
+        let thanhToan=25000+50*600+ 150*400+ (phut-200)*200;
+        alert("tien phai tra ="+thanhToan);
+    }
+</script>
+
+</body>
+</html>

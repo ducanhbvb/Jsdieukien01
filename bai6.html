@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hoahong</title>
+</head>
+<body>
+nhap doanh so don vi trieu:<input id="doanhSo" style="text"><br/>
+
+<button style="button" onclick="tinhhoahong()">tinh luong</button>
+</body>
+<script>
+    function tinhhoahong() {
+        let doanhSo = parseInt(document.getElementById("doanhSo").value);
+        if (doanhSo > 50) {
+            let hoahong = doanhSo * 5 / 100;
+            document.write("tien luong :" + hoahong+" trieu");
+        } else if (doanhSo > 100) {
+            let hoahong = doanhSo * 7 / 100;
+            document.write("tien luong :" + hoahong+ " trieu");
+        }
+    }
+</script>
+</html>

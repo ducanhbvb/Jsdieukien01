@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1</title>
+</head>
+<body>
+Nhập số thứ 1: <input id="numBer1" style="text"><br/>
+Nhập số thứ 2: <input id="numBer2" style="text"><br/>
+<button style="button" onclick="tinh()">Cick Me!</button>
+<script>
+    function tinh() {
+        let numBer1 = parseInt(document.getElementById("numBer1").value);
+        let numBer2 = parseInt(document.getElementById("numBer2").value);
+        if ((numBer1 % numBer2) == 0) {
+            document.write("so thu nhat chia het cho so thu 2");
+        } else {
+            document.write("so thu nhat khong chia het cho so thu 2");
+        }
+    }
+</script>
+</body>
+</html>
